@@ -1,22 +1,35 @@
-import { effectScope, shallowReactive, reactive, getCurrentScope, hasInjectionContext, getCurrentInstance, inject, toRef, version, unref, h, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw, ref, defineComponent, provide, createElementBlock, readonly, onMounted, nextTick, watch, mergeProps, openBlock, createElementVNode, Fragment, renderList, createBlock, resolveDynamicComponent, toDisplayString, createCommentVNode, createVNode, Transition, withCtx, withDirectives, vShow, renderSlot, normalizeClass, createTextVNode, resolveComponent, resolveDirective, Teleport, createSlots, computed, withKeys, toHandlers, Suspense, useSSRContext, defineAsyncComponent, onErrorCaptured, onServerPrefetch, createApp } from "vue";
-import { $fetch } from "ofetch";
-import { baseURL } from "#internal/nuxt/paths";
-import { createHooks } from "hookable";
-import { getContext } from "unctx";
-import { sanitizeStatusCode, createError as createError$1, appendHeader, getRequestHeader, setCookie, getCookie, deleteCookie } from "h3";
-import { getActiveHead, CapoPlugin } from "unhead";
-import { defineHeadPlugin } from "@unhead/shared";
-import { START_LOCATION, createMemoryHistory, createRouter as createRouter$1, useRoute as useRoute$1, RouterView } from "vue-router";
-import { toRouteMatcher, createRouter } from "radix3";
-import defu$1, { defu } from "defu";
-import { hasProtocol, isScriptProtocol, joinURL, withQuery } from "ufo";
-import "devalue";
-import { parse } from "cookie-es";
-import destr from "destr";
-import { isEqual } from "ohash";
-import { klona } from "klona";
-import { createClient } from "@supabase/supabase-js";
-import { ssrRenderComponent, ssrRenderSuspense, ssrRenderVNode } from "vue/server-renderer";
+import { version, unref, inject, defineComponent, ref, provide, createElementBlock, h, computed, shallowReactive, watch, Suspense, nextTick, Fragment, Transition, hasInjectionContext, getCurrentInstance, readonly, mergeProps, useSSRContext, createApp, effectScope, reactive, getCurrentScope, onMounted, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, toRef, defineAsyncComponent, shallowRef, isReadonly, withCtx, isRef, isShallow, isReactive, toRaw, openBlock, renderList, createElementVNode, createBlock, toDisplayString, createCommentVNode, withDirectives, vShow, renderSlot, normalizeClass, createTextVNode, resolveComponent, resolveDirective, Teleport, createSlots, withKeys, toHandlers } from 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/vue/index.mjs';
+import { $fetch } from 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/ofetch/dist/node.mjs';
+import { b as baseURL } from '../_/renderer.mjs';
+import { createHooks } from 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/hookable/dist/index.mjs';
+import { getContext } from 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/unctx/dist/index.mjs';
+import { sanitizeStatusCode, createError as createError$1, appendHeader, getRequestHeader, setCookie, getCookie, deleteCookie } from 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/h3/dist/index.mjs';
+import { getActiveHead, CapoPlugin } from 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin } from 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/@unhead/shared/dist/index.mjs';
+import { useRoute as useRoute$1, RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/vue-router/dist/vue-router.node.mjs';
+import { toRouteMatcher, createRouter as createRouter$1 } from 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/radix3/dist/index.mjs';
+import defu$1, { defu } from 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/defu/dist/defu.mjs';
+import { hasProtocol, isScriptProtocol, joinURL, withQuery } from 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/ufo/dist/index.mjs';
+import { parse } from 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/cookie-es/dist/index.mjs';
+import destr from 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/destr/dist/index.mjs';
+import { isEqual } from 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/ohash/dist/index.mjs';
+import { klona } from 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/klona/dist/index.mjs';
+import { createClient } from 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/@supabase/supabase-js/dist/main/index.js';
+import { ssrRenderSuspense, ssrRenderComponent, ssrRenderVNode } from 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/vue/server-renderer/index.mjs';
+import 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/devalue/index.js';
+import 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/@unhead/ssr/dist/index.mjs';
+import '../runtime.mjs';
+import 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/unenv/runtime/fetch/index.mjs';
+import 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/scule/dist/index.mjs';
+import 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/unstorage/dist/index.mjs';
+import 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/unstorage/drivers/fs.mjs';
+import 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/unstorage/drivers/fs-lite.mjs';
+import 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/unstorage/drivers/lru-cache.mjs';
+import 'node:fs';
+import 'node:url';
+import 'file:///Users/kimlarocca/Websites/just-day-space-landing/node_modules/pathe/dist/index.mjs';
+
 if (!globalThis.$fetch) {
   globalThis.$fetch = $fetch.create({
     baseURL: baseURL()
@@ -428,7 +441,7 @@ function injectHead() {
     return _global[globalKey$1]();
   }
   const head = inject(headSymbol);
-  if (!head && process.env.NODE_ENV !== "production")
+  if (!head && "prerender" !== "production")
     console.warn("Unhead is missing Vue context, falling back to shared context. This may have unexpected results.");
   return head || getActiveHead();
 }
@@ -585,7 +598,7 @@ function toArray$1(value) {
 async function getRouteRules(url) {
   {
     const _routeRulesMatcher = toRouteMatcher(
-      createRouter({ routes: (/* @__PURE__ */ useRuntimeConfig()).nitro.routeRules })
+      createRouter$1({ routes: (/* @__PURE__ */ useRuntimeConfig()).nitro.routeRules })
     );
     return defu({}, ..._routeRulesMatcher.matchAll(url).reverse());
   }
@@ -594,7 +607,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import("./_nuxt/index-DLCd1lCG.js").then((m) => m.default || m)
+    component: () => import('./index-DLCd1lCG.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -732,7 +745,7 @@ const plugin = /* @__PURE__ */ defineNuxtPlugin({
     const history = ((_a = routerOptions.history) == null ? void 0 : _a.call(routerOptions, routerBase)) ?? createMemoryHistory(routerBase);
     const routes2 = routerOptions.routes ? ([__temp, __restore] = executeAsync(() => routerOptions.routes(_routes)), __temp = await __temp, __restore(), __temp) ?? _routes : _routes;
     let startPosition;
-    const router = createRouter$1({
+    const router = createRouter({
       ...routerOptions,
       scrollBehavior: (to, from, savedPosition) => {
         if (from === START_LOCATION) {
@@ -962,9 +975,6 @@ function useRequestEvent(nuxtApp = useNuxtApp()) {
   return (_a = nuxtApp.ssrContext) == null ? void 0 : _a.event;
 }
 function prerenderRoutes(path) {
-  if (!import.meta.prerender) {
-    return;
-  }
   const paths = toArray(path);
   appendHeader(useRequestEvent(), "x-nitro-prerender", paths.map((p) => encodeURIComponent(p)).join(", "));
 }
@@ -15034,7 +15044,7 @@ const primevue_TdXjRgL1MA = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
 let routes;
 const prerender_server_LXx1wM9sKF = /* @__PURE__ */ defineNuxtPlugin(async () => {
   let __temp, __restore;
-  if (!import.meta.prerender || routerOptions.hashMode) {
+  if (routerOptions.hashMode) {
     return;
   }
   if (routes && !routes.length) {
@@ -15076,7 +15086,7 @@ const plugins = [
   prerender_server_LXx1wM9sKF
 ];
 const layouts = {
-  default: () => import("./_nuxt/default-_zACaZ_n.js").then((m) => m.default || m)
+  default: () => import('./default-_zACaZ_n.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
@@ -15370,8 +15380,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import("./_nuxt/error-404-DH-y1iAc.js").then((r) => r.default || r));
-    const _Error = defineAsyncComponent(() => import("./_nuxt/error-500-BNXkGWe9.js").then((r) => r.default || r));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-DH-y1iAc.mjs').then((r) => r.default || r));
+    const _Error = defineAsyncComponent(() => import('./error-500-BNXkGWe9.mjs').then((r) => r.default || r));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
@@ -15451,17 +15461,6 @@ let entry;
   };
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
-export {
-  _export_sfc as _,
-  navigateTo as a,
-  useNuxtApp as b,
-  useRuntimeConfig as c,
-  __nuxt_component_0 as d,
-  entry$1 as default,
-  resolveUnrefHeadInput as e,
-  injectHead as i,
-  nuxtLinkDefaults as n,
-  resolveRouteObject as r,
-  useRouter as u
-};
+
+export { _export_sfc as _, navigateTo as a, useNuxtApp as b, useRuntimeConfig as c, __nuxt_component_0 as d, entry$1 as default, resolveUnrefHeadInput as e, injectHead as i, nuxtLinkDefaults as n, resolveRouteObject as r, useRouter as u };
 //# sourceMappingURL=server.mjs.map
