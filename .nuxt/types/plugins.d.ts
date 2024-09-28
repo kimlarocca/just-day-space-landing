@@ -19,8 +19,7 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/@nuxtjs/supabase/dist/runtime/plugins/auth-redirect.mjs").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/supabase/dist/runtime/plugins/supabase.client.mjs").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/supabase/dist/runtime/plugins/supabase.server.mjs").default> &
-  InjectionType<typeof import("../../plugins/primevue.js").default> &
-  InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/plugins/prerender.server.js").default>
+  InjectionType<typeof import("../../plugins/primevue.js").default>
 
 declare module '#app' {
   interface NuxtApp extends NuxtAppInjections { }
