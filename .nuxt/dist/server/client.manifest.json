@@ -1,23 +1,23 @@
 {
-  "_BQoZaHhN.js": {
+  "_CCX6xIG1.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BQoZaHhN.js",
-    "name": "vue.65b7bcda",
+    "file": "CCX6xIG1.js",
+    "name": "browser",
+    "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_DjjOJEvd.js": {
+  "_iTFS2dwP.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DjjOJEvd.js",
-    "name": "browser",
-    "isDynamicEntry": true,
+    "file": "iTFS2dwP.js",
+    "name": "vue.65b7bcda",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -27,13 +27,13 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Ck8_MAEJ.js",
+    "file": "lDbC-UEZ.js",
     "name": "default",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_BQoZaHhN.js"
+      "_iTFS2dwP.js"
     ],
     "css": []
   },
@@ -48,13 +48,13 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "C0z8j5Y3.js",
+    "file": "D4nodIiC.js",
     "name": "error-404",
     "src": "node_modules/nuxt/dist/app/components/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_BQoZaHhN.js"
+      "_iTFS2dwP.js"
     ],
     "css": []
   },
@@ -69,12 +69,12 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CqLX-TEc.js",
+    "file": "DqwL851w.js",
     "name": "error-500",
     "src": "node_modules/nuxt/dist/app/components/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_BQoZaHhN.js",
+      "_iTFS2dwP.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": []
@@ -90,13 +90,13 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DBNbR4zM.js",
+    "file": "7A72iIGI.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
     "dynamicImports": [
       "layouts/default.vue",
-      "_DjjOJEvd.js",
+      "_CCX6xIG1.js",
       "node_modules/nuxt/dist/app/components/error-404.vue",
       "node_modules/nuxt/dist/app/components/error-500.vue"
     ],
@@ -174,7 +174,7 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "za43DO4A.js",
+    "file": "DHM4FdR3.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
@@ -183,8 +183,8 @@
     ],
     "css": []
   },
-  "index.DuQa0Hci.css": {
-    "file": "index.DuQa0Hci.css",
+  "index.DdY1URJC.css": {
+    "file": "index.DdY1URJC.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true

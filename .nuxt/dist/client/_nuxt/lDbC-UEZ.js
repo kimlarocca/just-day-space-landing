@@ -1,0 +1,1 @@
+import{v as t,z as a,t as o,E as n}from"./7A72iIGI.js";import{u as s}from"./iTFS2dwP.js";const l={__name:"default",setup(_){return s({bodyAttrs:{class:"default"}}),(c,r)=>{const e=n;return o(),t("main",null,[a(e)])}}};export{l as default};

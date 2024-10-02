@@ -66,7 +66,7 @@ const appConfig = defuFn(inlineAppConfig);
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "7f5e20e1-2559-4686-80a6-074d53ed1b32",
+    "buildId": "5fb0244b-003b-4ad1-9c78-2ddbaef7fee6",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -95,7 +95,6 @@ const _inlineRuntimeConfig = {
   },
   "public": {
     "environment": "local",
-    "gtagId": "G-6CN5WGM5L0",
     "supabaseAuthSignInRedirectTo": "https://justdayspace.com",
     "supabaseKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF6Ym56ZHJid2RnY2NtYXdxd3RmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjQwOTc4NzYsImV4cCI6MjAzOTY3Mzg3Nn0.w02ujkoreWL7FhuAqP5nDNFTVsKIAwrh4ZoknJ8WuJs",
     "supabaseUrl": "https://qzbnzdrbwdgccmawqwtf.supabase.co",

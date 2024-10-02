@@ -5,8 +5,8 @@
     >
       <p class="mb-2">JustDaySpace is</p>
       <h1 class="mb-6">Launching Soon!</h1>
-      <a href="mailto:amy@amyinfinity.com" class="plain">
-        <Button label="Join Beta Waitlist" />
+      <a href="https://amyinfinity.com/justdayspace-signup" class="plain">
+        <Button label="Get Early Access" />
       </a>
     </div>
   </div>

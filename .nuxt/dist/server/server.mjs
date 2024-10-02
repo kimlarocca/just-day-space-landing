@@ -594,7 +594,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import("./_nuxt/index-DLCd1lCG.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-DtsG_QdT.js").then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
